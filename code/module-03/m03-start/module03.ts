@@ -3,10 +3,15 @@
 
 /*  EXERCISE 1
     TODO: Declare the Loan interface. */
-
+interface Loan {
+  principle: number;
+  interestRate: number;
+}
 
 /*  TODO: Declare the ConventionalLoan interface. */
-
+interface ConventionalLoan extends Loan {
+  months: number;
+}
 
 
 /*  TODO: Update the calculateInterestOnlyLoanPayment function. */
